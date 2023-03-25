@@ -19,7 +19,7 @@ router.get('/:id', async (req, res) => {
     if (!categoryData) {
       res.status(404).json({ message: 'Category not found' });
     } else {
-      res.status(200).json(category);
+      res.status(200).json(categoryData);
     }
   } catch (err) {
     res.status(500).json(err);

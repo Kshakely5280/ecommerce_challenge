@@ -44,7 +44,7 @@ router.put('/:id', async (req, res) => {
         id: req.params.id,
       },
     });
-    res.status(200).json(categoryData);
+    res.status(200).json("Updated successfully");
   } catch (err) {
     res.status(500).json(err);
   }
